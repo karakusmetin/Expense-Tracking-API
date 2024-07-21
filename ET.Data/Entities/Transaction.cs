@@ -9,7 +9,7 @@ namespace ET.Data.Entities
         public decimal Amount { get; set; }
         public string Description { get; set; }
         public DateTime TransactionDate { get; set; }
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
         public ApplicationUser User { get; set; }
     }
 
@@ -17,8 +17,8 @@ namespace ET.Data.Entities
     {
         public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.Property(x => x.InsertDate).IsRequired(true);
-            builder.Property(x => x.InsertUserId).IsRequired(true);
+            builder.Property(x => x.InsertDate).IsRequired(false);
+            builder.Property(x => x.InsertUserName).IsRequired(false);
             builder.Property(x => x.UpdateDate).IsRequired(false);
             builder.Property(x => x.UpdateUserId).IsRequired(false);
             builder.Property(x => x.IsActive).IsRequired(true).HasDefaultValue(true);

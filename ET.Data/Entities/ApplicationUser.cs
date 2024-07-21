@@ -17,14 +17,16 @@ namespace ET.Data.Entities
         public DateTime LastActivityDate { get; set; }
         public int PasswordRetryCount { get; set; }
         public int Status { get; set; }
+        public List<Transaction>? Transactions { get; set; }
+
     }
 
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {
         public void Configure(EntityTypeBuilder<ApplicationUser> builder)
         {
-            builder.Property(x => x.InsertDate).IsRequired(true);
-            builder.Property(x => x.InsertUserId).IsRequired(true);
+            builder.Property(x => x.InsertDate).IsRequired(false);
+            builder.Property(x => x.InsertUserName).IsRequired(false);
             builder.Property(x => x.UpdateDate).IsRequired(false);
             builder.Property(x => x.UpdateUserId).IsRequired(false);
             builder.Property(x => x.IsActive).IsRequired(true).HasDefaultValue(true);
@@ -41,6 +43,10 @@ namespace ET.Data.Entities
 
             builder.HasIndex(x => x.UserName).IsUnique(true);
 
+            builder.HasMany(x => x.Transactions)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId)
+                .IsRequired(true);
         }
     }
 }

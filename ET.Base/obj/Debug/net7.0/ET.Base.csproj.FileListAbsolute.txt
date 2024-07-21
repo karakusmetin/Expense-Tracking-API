@@ -9,3 +9,4 @@ C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.dll
 C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\refint\ET.Base.dll
 C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.pdb
 C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ref\ET.Base.dll
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.csproj.AssemblyReference.cache

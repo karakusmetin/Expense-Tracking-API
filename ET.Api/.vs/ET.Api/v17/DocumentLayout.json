@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\command\\tokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\cqrs\\tokencqrs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35724474-867B-4D23-9F5C-B098B8D210CC}|..\\ET.Schema\\ET.Schema.csproj|c:\\users\\fener\\desktop\\yeni\\et.schema\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC59E896-D01C-4DCB-B79C-ED61A20ACC2D}|..\\ET.Base\\ET.Base.csproj|c:\\users\\fener\\desktop\\yeni\\et.base\\token\\jwtconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,101 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAiwCcAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T15:25:48.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TokenController.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TokenController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TokenController.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TokenController.cs",
-              "RelativeToolTip": "Controllers\\TokenController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T15:02:21.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TokenCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\TokenCommandHandler.cs",
-              "RelativeDocumentMoniker": "..\\ET.Business\\Command\\TokenCommandHandler.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\TokenCommandHandler.cs",
-              "RelativeToolTip": "..\\ET.Business\\Command\\TokenCommandHandler.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwEgAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:54:20.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Token.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\Token.cs",
-              "RelativeDocumentMoniker": "..\\ET.Schema\\Token.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\Token.cs",
-              "RelativeToolTip": "..\\ET.Schema\\Token.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:51:55.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TokenCqrs.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TokenCqrs.cs",
-              "RelativeDocumentMoniker": "..\\ET.Business\\Cqrs\\TokenCqrs.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TokenCqrs.cs",
-              "RelativeToolTip": "..\\ET.Business\\Cqrs\\TokenCqrs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:50:50.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JwtConfig.cs",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\Token\\JwtConfig.cs",
-              "RelativeDocumentMoniker": "..\\ET.Base\\Token\\JwtConfig.cs",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\Token\\JwtConfig.cs",
-              "RelativeToolTip": "..\\ET.Base\\Token\\JwtConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:47:23.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-21T14:29:22.032Z",
-              "EditorCaption": ""
             }
           ]
         }

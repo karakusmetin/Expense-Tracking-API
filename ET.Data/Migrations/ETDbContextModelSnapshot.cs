@@ -44,11 +44,11 @@ namespace ET.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("InsertDate")
+                    b.Property<DateTime?>("InsertDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("InsertUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("InsertUserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -123,11 +123,11 @@ namespace ET.Data.Migrations
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
-                    b.Property<DateTime>("InsertDate")
+                    b.Property<DateTime?>("InsertDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("InsertUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("InsertUserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -143,17 +143,12 @@ namespace ET.Data.Migrations
                     b.Property<Guid?>("UpdateUserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("UserId1")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserId1");
 
                     b.ToTable("Transactions");
                 });
@@ -161,12 +156,17 @@ namespace ET.Data.Migrations
             modelBuilder.Entity("ET.Data.Entities.Transaction", b =>
                 {
                     b.HasOne("ET.Data.Entities.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId1")
+                        .WithMany("Transactions")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ET.Data.Entities.ApplicationUser", b =>
+                {
+                    b.Navigation("Transactions");
                 });
 #pragma warning restore 612, 618
         }

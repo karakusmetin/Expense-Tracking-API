@@ -1,9 +1,17 @@
+using AutoMapper;
 using ET.Base.Token;
 using ET.Business.Cqrs;
+using ET.Business.Mapper;
+using ET.Business.ScheduledJobs;
 using ET.Data.Extensions;
+using Hangfire;
+using Hangfire.SqlServer;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Configuration;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,9 +45,51 @@ builder.Services.AddSwaggerGen(c=>
     });
 });
 
+
+var mapperConfig = new MapperConfiguration(cfg => cfg.AddProfile(new MapperConfig()));
+builder.Services.AddSingleton(mapperConfig.CreateMapper());
+
+builder.Services.AddHangfire(config => config
+    .UseSqlServerStorage(builder.Configuration.GetConnectionString("HangfireConnection"), new SqlServerStorageOptions
+    {
+        CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
+        SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+        QueuePollInterval = TimeSpan.Zero,
+        UseRecommendedIsolationLevel = true,
+        DisableGlobalLocks = true
+    }));
+builder.Services.AddHangfireServer();
+
+
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTokenCommand).Assembly));
+
+
+
+JwtConfig jwtConfig = builder.Configuration.GetSection("JwtConfig").Get<JwtConfig>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = true;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidIssuer = jwtConfig.Issuer,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtConfig.Secret)),
+        ValidAudience = jwtConfig.Audience,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.FromMinutes(2)
+    };
+});
+
+builder.Services.AddTransient<IScheduledJobService, ScheduledJobService>();
 
 var configuration = builder.Configuration;
 
@@ -59,5 +109,24 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseHangfireDashboard();
+
+// Schedule jobs
+var jobService = app.Services.GetService<IScheduledJobService>();
+RecurringJob.AddOrUpdate(
+    "AggregateDailyExpenses",
+    () => jobService.AggregateDailyExpenses(),
+    Cron.Daily);
+
+RecurringJob.AddOrUpdate(
+    "AggregateWeeklyExpenses",
+    () => jobService.AggregateWeeklyExpenses(),
+    Cron.Weekly);
+
+RecurringJob.AddOrUpdate(
+    "AggregateMonthlyExpenses",
+    () => jobService.AggregateMonthlyExpenses(),
+    Cron.Monthly);
 
 app.Run();

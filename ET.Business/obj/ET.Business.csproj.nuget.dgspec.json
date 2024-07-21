@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "LinqKit": {
+              "target": "Package",
+              "version": "[1.2.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -115,6 +121,22 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.14, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.14, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.8.14, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.0.1, )"

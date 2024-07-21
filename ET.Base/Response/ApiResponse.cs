@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ET.Base.Response
 {

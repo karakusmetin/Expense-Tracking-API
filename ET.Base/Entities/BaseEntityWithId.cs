@@ -2,9 +2,9 @@
 {
     public abstract class BaseEntityWithId
     {
-        public Guid Id { get; set; }
-        public Guid InsertUserId { get; set; }
-        public DateTime InsertDate { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string? InsertUserName { get; set; }
+        public DateTime? InsertDate { get; set; }
         public Guid? UpdateUserId { get; set; }
         public DateTime? UpdateDate { get; set; }
         public Guid? DeleteUserId { get; set; }
