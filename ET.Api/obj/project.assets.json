@@ -59,6 +59,55 @@
           }
         }
       },
+      "MediatR/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "[2.0.1, 3.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.20": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.17": {
         "type": "package",
         "dependencies": {
@@ -1195,6 +1244,22 @@
           "bin/placeholder/ET.Base.dll": {}
         }
       },
+      "ET.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ET.Base": "1.0.0",
+          "ET.Data": "1.0.0",
+          "ET.Schema": "1.0.0",
+          "MediatR": "12.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ET.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ET.Business.dll": {}
+        }
+      },
       "ET.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1208,6 +1273,16 @@
         },
         "runtime": {
           "bin/placeholder/ET.Data.dll": {}
+        }
+      },
+      "ET.Schema/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ET.Schema.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ET.Schema.dll": {}
         }
       }
     }
@@ -1271,6 +1346,51 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MediatR/12.0.1": {
+      "sha512": "vfxplMielft+g5jxGO31xjjQpI6yqe4r2YGt0Q8x23phwbpJNmUQGY+cCNNFMKKViXRM67ajUlAiwirMeuJWTQ==",
+      "type": "package",
+      "path": "mediatr/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net6.0/MediatR.dll",
+        "lib/net6.0/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.12.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/2.0.1": {
+      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "type": "package",
+      "path": "mediatr.contracts/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.2.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.20": {
+      "sha512": "lIjUAxtqNv+bD+Bnlksu96/haMLfuXA7nASXUnvxXfFWA3YEov7pM5AtvlelvQCtwFvu1LR4SFryHvLur491Qg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.7.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/7.0.17": {
@@ -3445,16 +3565,29 @@
       "path": "../ET.Base/ET.Base.csproj",
       "msbuildProject": "../ET.Base/ET.Base.csproj"
     },
+    "ET.Business/1.0.0": {
+      "type": "project",
+      "path": "../ET.Business/ET.Business.csproj",
+      "msbuildProject": "../ET.Business/ET.Business.csproj"
+    },
     "ET.Data/1.0.0": {
       "type": "project",
       "path": "../ET.Data/ET.Data.csproj",
       "msbuildProject": "../ET.Data/ET.Data.csproj"
+    },
+    "ET.Schema/1.0.0": {
+      "type": "project",
+      "path": "../ET.Schema/ET.Schema.csproj",
+      "msbuildProject": "../ET.Schema/ET.Schema.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "ET.Base >= 1.0.0",
+      "ET.Business >= 1.0.0",
       "ET.Data >= 1.0.0",
+      "ET.Schema >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.20",
       "Microsoft.AspNetCore.OpenApi >= 7.0.17",
       "Microsoft.EntityFrameworkCore >= 7.0.20",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.20",
@@ -3493,8 +3626,14 @@
             "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\ET.Base.csproj": {
               "projectPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\ET.Base.csproj"
             },
+            "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\ET.Business.csproj": {
+              "projectPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\ET.Business.csproj"
+            },
             "C:\\Users\\fener\\Desktop\\Yeni\\ET.Data\\ET.Data.csproj": {
               "projectPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Data\\ET.Data.csproj"
+            },
+            "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\ET.Schema.csproj": {
+              "projectPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\ET.Schema.csproj"
             }
           }
         }
@@ -3514,6 +3653,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[7.0.20, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.17, )"

@@ -1,0 +1,11 @@
+C:\Users\fener\Desktop\Yeni\ET.Schema\bin\Debug\net7.0\ET.Schema.deps.json
+C:\Users\fener\Desktop\Yeni\ET.Schema\bin\Debug\net7.0\ET.Schema.dll
+C:\Users\fener\Desktop\Yeni\ET.Schema\bin\Debug\net7.0\ET.Schema.pdb
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.AssemblyInfoInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.AssemblyInfo.cs
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.csproj.CoreCompileInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.dll
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\refint\ET.Schema.dll
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ET.Schema.pdb
+C:\Users\fener\Desktop\Yeni\ET.Schema\obj\Debug\net7.0\ref\ET.Schema.dll

@@ -78,3 +78,10 @@ C:\Users\fener\Desktop\Yeni\ET.Api\obj\Debug\net7.0\refint\ET.Api.dll
 C:\Users\fener\Desktop\Yeni\ET.Api\obj\Debug\net7.0\ET.Api.pdb
 C:\Users\fener\Desktop\Yeni\ET.Api\obj\Debug\net7.0\ET.Api.genruntimeconfig.cache
 C:\Users\fener\Desktop\Yeni\ET.Api\obj\Debug\net7.0\ref\ET.Api.dll
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\MediatR.dll
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\ET.Business.dll
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\ET.Schema.dll
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\ET.Business.pdb
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\ET.Schema.pdb
+C:\Users\fener\Desktop\Yeni\ET.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

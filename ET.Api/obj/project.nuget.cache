@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "SoSzfTfW0Ao093ERRD/dqCs3BnKgfnDdESpMPKcsZb9MJNEQEhJQ5X3EkkOburBi3XuNdKwTiMTD41lSUcYTVg==",
+  "dgSpecHash": "w8TiJr7jOqSUUmShTeQFSEpKvL5isCNi9VzT/dZ+JIkEumR1f7i/xdiEDFAfwVWwCJzSgX0ZmgDdO+EP1gO8jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\ET.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fener\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\fener\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\fener\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\fener\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\fener\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\fener\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.20\\microsoft.aspnetcore.authentication.jwtbearer.7.0.20.nupkg.sha512",
     "C:\\Users\\fener\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.17\\microsoft.aspnetcore.openapi.7.0.17.nupkg.sha512",
     "C:\\Users\\fener\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\fener\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
