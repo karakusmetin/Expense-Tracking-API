@@ -1,0 +1,17 @@
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Data.deps.json
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Data.runtimeconfig.json
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Data.dll
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Data.pdb
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Base.dll
+C:\Users\fener\Desktop\Yeni\ET.Data\bin\Debug\net7.0\ET.Base.pdb
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.csproj.AssemblyReference.cache
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.AssemblyInfoInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.AssemblyInfo.cs
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.csproj.CoreCompileInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.csproj.Up2Date
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.dll
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\refint\ET.Data.dll
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.pdb
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ET.Data.genruntimeconfig.cache
+C:\Users\fener\Desktop\Yeni\ET.Data\obj\Debug\net7.0\ref\ET.Data.dll

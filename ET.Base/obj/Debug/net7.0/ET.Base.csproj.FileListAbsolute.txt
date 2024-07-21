@@ -1,0 +1,11 @@
+C:\Users\fener\Desktop\Yeni\ET.Base\bin\Debug\net7.0\ET.Base.deps.json
+C:\Users\fener\Desktop\Yeni\ET.Base\bin\Debug\net7.0\ET.Base.dll
+C:\Users\fener\Desktop\Yeni\ET.Base\bin\Debug\net7.0\ET.Base.pdb
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.AssemblyInfoInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.AssemblyInfo.cs
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.csproj.CoreCompileInputs.cache
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.dll
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\refint\ET.Base.dll
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ET.Base.pdb
+C:\Users\fener\Desktop\Yeni\ET.Base\obj\Debug\net7.0\ref\ET.Base.dll
