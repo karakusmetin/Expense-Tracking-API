@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\scheduledjobs\\scheduledjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\query\\transactionqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\cqrs\\tokencqrs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\command\\transactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\cqrs\\transactioncqrs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E8818D-866D-458A-8F19-7BCFFCFE4BD6}|..\\ET.Business\\ET.Business.csproj|c:\\users\\fener\\desktop\\yeni\\et.business\\command\\applicationusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC59E896-D01C-4DCB-B79C-ED61A20ACC2D}|..\\ET.Base\\ET.Base.csproj|c:\\users\\fener\\desktop\\yeni\\et.base\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35724474-867B-4D23-9F5C-B098B8D210CC}|..\\ET.Schema\\ET.Schema.csproj|c:\\users\\fener\\desktop\\yeni\\et.schema\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|c:\\users\\fener\\desktop\\yeni\\et.api\\controllers\\scheduledjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E07C67C-C86A-4EEA-B813-3C5C307A9B92}|ET.Api.csproj|solutionrelative:controllers\\scheduledjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +75,166 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "Controllers\\TokenController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T07:59:25.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Controllers\\TransactionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:33:26.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TransactionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\TransactionCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\Command\\TransactionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\TransactionCommandHandler.cs",
+              "RelativeToolTip": "..\\ET.Business\\Command\\TransactionCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAACJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T09:49:44.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Query\\TransactionQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\Query\\TransactionQueryHandler.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Query\\TransactionQueryHandler.cs",
+              "RelativeToolTip": "..\\ET.Business\\Query\\TransactionQueryHandler.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwFcAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T07:07:50.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScheduledJobService.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\ScheduledJobs\\ScheduledJobService.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\ScheduledJobs\\ScheduledJobService.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\ScheduledJobs\\ScheduledJobService.cs",
+              "RelativeToolTip": "..\\ET.Business\\ScheduledJobs\\ScheduledJobService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:15:42.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUserController.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\ApplicationUserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationUserController.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\ApplicationUserController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationUserController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T08:23:33.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:58:34.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\ApplicationUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\Command\\ApplicationUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Command\\ApplicationUserCommandHandler.cs",
+              "RelativeToolTip": "..\\ET.Business\\Command\\ApplicationUserCommandHandler.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwHIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:27:33.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenCqrs.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TokenCqrs.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\Cqrs\\TokenCqrs.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TokenCqrs.cs",
+              "RelativeToolTip": "..\\ET.Business\\Cqrs\\TokenCqrs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T08:35:40.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransactionCqrs.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TransactionCqrs.cs",
+              "RelativeDocumentMoniker": "..\\ET.Business\\Cqrs\\TransactionCqrs.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Business\\Cqrs\\TransactionCqrs.cs",
+              "RelativeToolTip": "..\\ET.Business\\Cqrs\\TransactionCqrs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T07:43:46.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\Response\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "..\\ET.Base\\Response\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Base\\Response\\ApiResponse.cs",
+              "RelativeToolTip": "..\\ET.Base\\Response\\ApiResponse.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wAYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:46:38.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "..\\ET.Schema\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Schema\\ApplicationUser.cs",
+              "RelativeToolTip": "..\\ET.Schema\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T08:22:03.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScheduledJobsController.cs",
+              "DocumentMoniker": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\ScheduledJobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ScheduledJobsController.cs",
+              "ToolTip": "C:\\Users\\fener\\Desktop\\Yeni\\ET.Api\\Controllers\\ScheduledJobsController.cs",
+              "RelativeToolTip": "Controllers\\ScheduledJobsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:33:11.08Z"
             }
           ]
         }

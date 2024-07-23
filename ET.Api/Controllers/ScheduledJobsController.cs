@@ -1,5 +1,6 @@
 ﻿using ET.Business.Cqrs;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ET.Api.Controllers
@@ -16,6 +17,7 @@ namespace ET.Api.Controllers
         }
 
         [HttpPost("aggregate-daily-expenses")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> AggregateDailyExpenses()
         {
             var result = await mediator.Send(new AggregateDailyExpensesCommand());
@@ -23,6 +25,7 @@ namespace ET.Api.Controllers
         }
 
         [HttpPost("aggregate-weekly-expenses")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> AggregateWeeklyExpenses()
         {
             var result = await mediator.Send(new AggregateWeeklyExpensesCommand());
@@ -30,6 +33,7 @@ namespace ET.Api.Controllers
         }
 
         [HttpPost("aggregate-monthly-expenses")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> AggregateMonthlyExpenses()
         {
             var result = await mediator.Send(new AggregateMonthlyExpensesCommand());

@@ -9,58 +9,66 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ET.Business.Command
 {
-    public class ApplicationUserCommandHandler :
-    IRequestHandler<CreateApplicationUserCommand, ApiResponse<ApplicationUserResponse>>,
-    IRequestHandler<UpdateApplicationUserCommand, ApiResponse>,
-    IRequestHandler<DeleteApplicationUserCommand, ApiResponse>
+    public class TransactionCommandHandler : 
+        IRequestHandler<CreateTransactionCommand, ApiResponse<TransactionResponse>>,
+        IRequestHandler<UpdateTransactionCommand, ApiResponse>,
+        IRequestHandler<DeleteTransactionCommand, ApiResponse>
+
     {
         private readonly ETDbContext dbContext;
         private readonly IMapper mapper;
 
-        public ApplicationUserCommandHandler(ETDbContext dbContext, IMapper mapper)
+        public TransactionCommandHandler(ETDbContext dbContext,IMapper mapper)
         {
             this.dbContext = dbContext;
             this.mapper = mapper;
         }
 
-        public async Task<ApiResponse<ApplicationUserResponse>> Handle(CreateApplicationUserCommand request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<TransactionResponse>> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
         {
             using var transaction = await dbContext.Database.BeginTransactionAsync(cancellationToken);
             try
             {
-                var checkIdentity = await dbContext.Set<ApplicationUser>()
-                    .Where(x => x.UserName == request.Model.UserName)
+                var checkUser = await dbContext.ApplicationUsers
+                    .Where(x => x.Id == request.Model.UserId)
                     .FirstOrDefaultAsync(cancellationToken);
 
-                if (checkIdentity != null)
+                if (checkUser == null)
                 {
-                    return new ApiResponse<ApplicationUserResponse>($"{request.Model.UserName} is in use.");
+                    return new ApiResponse<TransactionResponse>($"{request.Model.UserId} user not found.");
                 }
-
-                var entity = mapper.Map<ApplicationUserRequest, ApplicationUser>(request.Model);
+                var checkTransaction = await dbContext.Transactions.Where(x=>x.Id == request.Model.TransactionId).FirstOrDefaultAsync(cancellationToken);
+                if (checkTransaction != null)
+                {
+       
+                    return new ApiResponse<TransactionResponse>("Transaction already have");
+                }
+                var entity = mapper.Map<TransactionRequest, Transaction>(request.Model);
                 entity.InsertDate = DateTime.UtcNow;
 
-                var entityResult = await dbContext.AddAsync(entity, cancellationToken);
+
+                var entityResult = await dbContext.Transactions.AddAsync(entity, cancellationToken);
                 await dbContext.SaveChangesAsync(cancellationToken);
 
                 await transaction.CommitAsync(cancellationToken);
 
-                var mapped = mapper.Map<ApplicationUser, ApplicationUserResponse>(entityResult.Entity);
-                return new ApiResponse<ApplicationUserResponse>(mapped);
+                var mapped = mapper.Map<Transaction, TransactionResponse>(entityResult.Entity);
+                return new ApiResponse<TransactionResponse>(mapped);
             }
             catch (Exception ex)
             {
                 await transaction.RollbackAsync(cancellationToken);
-                return new ApiResponse<ApplicationUserResponse>($"An error occurred: {ex.Message}");
+                return new ApiResponse<TransactionResponse>($"An error occurred: {ex.Message}");
             }
+            throw new NotImplementedException();
         }
 
-        public async Task<ApiResponse> Handle(UpdateApplicationUserCommand request, CancellationToken cancellationToken)
+        public async Task<ApiResponse> Handle(UpdateTransactionCommand request, CancellationToken cancellationToken)
         {
             using var transaction = await dbContext.Database.BeginTransactionAsync(cancellationToken);
             try
             {
-                var fromdb = await dbContext.Set<ApplicationUser>()
+                var fromdb = await dbContext.Set<Transaction>()
                     .Where(x => x.Id == request.Id)
                     .FirstOrDefaultAsync(cancellationToken);
 
@@ -68,11 +76,11 @@ namespace ET.Business.Command
                 {
                     return new ApiResponse("Record not found");
                 }
-
-                fromdb.FirstName = request.Model.FirstName;
-                fromdb.LastName = request.Model.LastName;
-                fromdb.Email = request.Model.Email;
-                fromdb.Role = request.Model.Role;
+                
+                fromdb.UpdateDate = DateTime.UtcNow;
+                fromdb.Amount = request.Model.Amount;
+                fromdb.Description = request.Model.Description;
+                
 
                 await dbContext.SaveChangesAsync(cancellationToken);
                 await transaction.CommitAsync(cancellationToken);
@@ -84,14 +92,15 @@ namespace ET.Business.Command
                 await transaction.RollbackAsync(cancellationToken);
                 return new ApiResponse($"An error occurred: {ex.Message}");
             }
+
         }
 
-        public async Task<ApiResponse> Handle(DeleteApplicationUserCommand request, CancellationToken cancellationToken)
+        public async Task<ApiResponse> Handle(DeleteTransactionCommand request, CancellationToken cancellationToken)
         {
             using var transaction = await dbContext.Database.BeginTransactionAsync(cancellationToken);
             try
             {
-                var fromdb = await dbContext.Set<ApplicationUser>()
+                var fromdb = await dbContext.Set<Transaction>()
                     .Where(x => x.Id == request.Id)
                     .FirstOrDefaultAsync(cancellationToken);
 
@@ -102,20 +111,7 @@ namespace ET.Business.Command
 
                 fromdb.IsActive = false;
                 await dbContext.SaveChangesAsync(cancellationToken);
-
-
-                var transactionsByUser = await dbContext.Transactions.Where(x=>x.UserId == request.Id).ToListAsync(cancellationToken);
-                
-                if(transactionsByUser != null)
-                {
-                    foreach (var item in transactionsByUser)
-                    {
-                        item.IsActive = false;
-                    }
-                }
                 await transaction.CommitAsync(cancellationToken);
-
-
 
                 return new ApiResponse();
             }

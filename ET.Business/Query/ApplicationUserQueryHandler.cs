@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore;
 namespace ET.Business.Query
 {
     public class ApplicationUserQueryHandler :
-    IRequestHandler<GetAllApplicationUserQuery, ApiResponse<List<ApplicationUserResponse>>>,
-    IRequestHandler<GetApplicationUserByIdQuery, ApiResponse<ApplicationUserResponse>>
+        IRequestHandler<GetAllApplicationUserQuery, ApiResponse<List<ApplicationUserResponse>>>,
+        IRequestHandler<GetApplicationUserByIdQuery, ApiResponse<ApplicationUserResponse>>
     {
         private readonly ETDbContext dbContext;
         private readonly IMapper mapper;

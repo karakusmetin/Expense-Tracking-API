@@ -20,7 +20,7 @@ namespace ET.Api.Controllers
             this.mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllApplicationUsers/")]
         [Authorize(Roles = "admin")]
         public async Task<ApiResponse<List<ApplicationUserResponse>>> Get()
         {
@@ -29,7 +29,7 @@ namespace ET.Api.Controllers
             return result;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetByApplicationUserId/{id}")]
         [Authorize(Roles = "admin")]
         public async Task<ApiResponse<ApplicationUserResponse>> Get(Guid id)
         {
@@ -39,7 +39,7 @@ namespace ET.Api.Controllers
         }
 
         [HttpPost]
-        
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<ApplicationUserResponse>> Post([FromBody] ApplicationUserRequest ApplicationUser)
         {
             var operation = new CreateApplicationUserCommand(ApplicationUser);
@@ -47,7 +47,7 @@ namespace ET.Api.Controllers
             return result;
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("PutByApplicationUserId/{id}")]
         [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Put(Guid id, [FromBody] ApplicationUserRequest ApplicationUser)
         {
@@ -56,7 +56,7 @@ namespace ET.Api.Controllers
             return result;
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteByApplicationUserId/{id}")]
         [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Delete(Guid id)
         {
